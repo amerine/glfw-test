@@ -18,11 +18,11 @@ func main() {
 	defer glfw.Terminate()
 
 	if err := gl.Init(); err != nil {
-		log.Fatalln("failed to initialize opengl:", err)
+		log.Fatalln("failed to initialize OpenGL:", err)
 	}
 
-	openglVersion := gl.GoStr(gl.GetString(gl.VERSION))
-	fmt.Println("OpenGL Version:", openglVersion)
+	openGLVersion := gl.GoStr(gl.GetString(gl.VERSION))
+	fmt.Println("OpenGL Version:", openGLVersion)
 
 	for !window.ShouldClose() {
 		window.SwapBuffers()
