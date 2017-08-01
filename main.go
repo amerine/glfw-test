@@ -4,6 +4,7 @@ import (
 	"log"
 	"runtime"
 
+	"github.com/go-gl/gl/v2.1/gl"
 	"github.com/go-gl/glfw/v3.2/glfw"
 )
 
@@ -27,6 +28,10 @@ func main() {
 	}
 
 	window.MakeContextCurrent()
+
+	if err = gl.Init(); err != nil {
+		log.Fatalln("failed to initialize opengl:", err)
+	}
 
 	for !window.ShouldClose() {
 		window.SwapBuffers()

@@ -3,6 +3,13 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "jOHp53XIam0AgWoPYdHNt/LsdiM=",
+			"path": "github.com/go-gl/gl/v2.1/gl",
+			"revision": "39ef8e959f4050148ec5a59816a93b9e65b4528f",
+			"revisionTime": "2017-06-20T20:25:32Z",
+			"tree": true
+		},
+		{
 			"checksumSHA1": "rTkp+I/pqMI0XKFJNl0FZbkf+E4=",
 			"path": "github.com/go-gl/glfw/v3.2/glfw",
 			"revision": "222b83c41c19cc975bfbf6f2611f3a97bde91a56",
