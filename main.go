@@ -18,12 +18,14 @@ func main() {
 	}
 	defer glfw.Terminate()
 
+	glfw.WindowHint(glfw.Resizable, glfw.False)
+	glfw.WindowHint(glfw.ContextVersionMajor, 2)
+	glfw.WindowHint(glfw.ContextVersionMinor, 1)
 	window, err := glfw.CreateWindow(400, 400, "glfw testing", nil, nil)
 	if err != nil {
 		log.Fatalln("failed to create glfw window:", err)
 	}
 
-	window.SetSizeLimits(400, 400, 400, 400)
 	window.MakeContextCurrent()
 
 	for !window.ShouldClose() {
