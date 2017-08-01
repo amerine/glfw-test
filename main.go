@@ -9,6 +9,11 @@ import (
 	"github.com/go-gl/glfw/v3.2/glfw"
 )
 
+const (
+	windowHeight = 400
+	windowWidth  = 400
+)
+
 func init() {
 	runtime.LockOSThread()
 }
@@ -42,7 +47,7 @@ func initGLFWWindow() *glfw.Window {
 	glfw.WindowHint(glfw.OpenGLProfile, glfw.OpenGLCoreProfile)
 	glfw.WindowHint(glfw.OpenGLForwardCompatible, glfw.True)
 
-	window, err := glfw.CreateWindow(400, 400, "glfw testing", nil, nil)
+	window, err := glfw.CreateWindow(windowWidth, windowHeight, "glfw testing", nil, nil)
 	if err != nil {
 		log.Fatalln("failed to create glfw window:", err)
 	}
