@@ -1,0 +1,14 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "rTkp+I/pqMI0XKFJNl0FZbkf+E4=",
+			"path": "github.com/go-gl/glfw/v3.2/glfw",
+			"revision": "222b83c41c19cc975bfbf6f2611f3a97bde91a56",
+			"revisionTime": "2017-07-29T05:30:10Z",
+			"tree": true
+		}
+	],
+	"rootPath": "github.com/amerine/glfw-test"
+}
