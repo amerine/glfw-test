@@ -12,7 +12,20 @@ func init() {
 
 func main() {
 	err := glfw.Init()
-	if err != nil (
-		log.Fatalln("failed to initialize glfw:", err)
-	)
+	if err != nil {
+		panic(err)
+	}
+	defer glfw.Terminate()
+
+	window, err := glfw.CreateWindow(400, 400, "glfw testing", nil, nil)
+	if err != nil {
+		panic(err)
+	}
+
+	window.MakeContextCurrent()
+
+	for !window.ShouldClose() {
+		window.SwapBuffers()
+		glfw.PollEvents()
+	}
 }
