@@ -22,6 +22,7 @@ func main() {
 		panic(err)
 	}
 
+	window.SetSizeLimits(400, 400, 400, 400)
 	window.MakeContextCurrent()
 
 	for !window.ShouldClose() {
